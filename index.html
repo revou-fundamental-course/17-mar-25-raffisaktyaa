@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Katik - Kalkulator Matematik</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="main-header">
+        <h1><span class="brand">Katik</span> Kalkulator Matematik</h1>
+    </header>
     
+    <main>
+        <header>
+            <h1>Welcome to Katik</h1>
+        </header>
+        
+        <p>Hai Sobat, selamat datang di Katik!</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+
+        <div class="nav-fitur">
+            <a href="#" class="nav-fitur-active">Persegi</a>
+            <a href="#" class="nav-fitur-non-active">Persegi Panjang</a>
+        </div>
+
+        <!-- Luas Persegi -->
+        <section class="card">
+            <header class="section-header">
+                <h1>Luas Persegi</h1>
+            </header>
+
+            <div class="section-content">
+                <div class="section-image"></div>
+                
+                <div class="text-left">
+                    <p>Rumus Luas Persegi yaitu:</p>
+                </div>
+
+                <p class="rumus"><b>L = S × S</b></p>
+
+                <div class="text-left">
+                    <p>Di mana:</p>
+                    <p>L = Luas</p>
+                    <p>S = Sisi</p>
+                    
+                    <h2>Hitung Luas Persegi</h2>
+                    <input type="number" id="inputLuas" placeholder="Nilai Sisi">
+                    <button onclick="hitungLuas()">Hitung</button>
+                    
+                    <!-- Hasil Perhitungan -->
+                    <div class="hasil" id="hasilLuas"></div>
+                </div>
+            </div>
+
+            <button class="reset-button" onclick="resetLuas()">Reset</button>
+        </section>
+
+        <!-- Keliling Persegi -->
+        <section class="card">
+            <header class="section-header">
+                <h1>Keliling Persegi</h1>
+            </header>
+
+            <div class="section-content">
+                <div class="section-image"></div>
+
+                <div class="text-left">
+                    <p>Rumus Keliling Persegi:</p>
+                </div>
+                
+                <p class="rumus"><b>K = 4 × S</b></p>
+
+                <div class="text-left">
+                    <p>Di mana:</p>
+                    <p>K = Keliling</p>
+                    <p>S = Sisi</p>
+                    
+                    <h2>Hitung Keliling Persegi</h2>
+                    <input type="number" id="inputKeliling" placeholder="Nilai Sisi">
+                    <button onclick="hitungKeliling()">Hitung</button>
+                    
+                    <!-- Hasil Perhitungan -->
+                    <div class="hasil" id="hasilKeliling"></div>
+                </div>
+            </div>
+
+            <button class="reset-button" onclick="resetKeliling()">Reset</button>
+        </section>
+    </main>
+
+    <footer class="class-footer">
+        <p>Made by Raffi@2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
